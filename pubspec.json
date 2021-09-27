@@ -1,0 +1,16 @@
+{
+    "dependencies": [
+        "dartz",
+        "freezed_annotation",
+        "flutter_screenutil",
+        "get",
+        "get_storage",
+        "logger",
+        "json_serializable",
+        "rxdart"
+    ],
+    "dev_dependencies": [
+        "build_runner",
+        "freezed"
+    ]
+}
