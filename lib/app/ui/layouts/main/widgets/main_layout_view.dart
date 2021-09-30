@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 class MainLayoutView extends StatelessWidget {
   final Widget child;
 
@@ -9,4 +10,3 @@ class MainLayoutView extends StatelessWidget {
     return Container(child: child);
   }
 }
-
