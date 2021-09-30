@@ -23,5 +23,5 @@ class AppPages {
       binding: HomeBinding(),
       transition: _defaultTransition,
     ),
-];
+  ];
 }
