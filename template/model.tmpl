@@ -1,0 +1,24 @@
+import 'package:freezed_annotation/freezed_annotation.dart';
+
+import '../../helpers/model_helpers.dart';
+
+part '$tmplName.freezed.dart';
+part '$tmplName.g.dart';
+
+@freezed
+abstract class $TmplName implements _$$TmplName {
+  const $TmplName._();
+
+  const factory $TmplName({
+    required String id,
+    @Default(false) bool active,
+    String? createdAt,
+    String? updatedAt,
+  }) = _$TmplName;
+
+  factory $TmplName.fromJson(Map<String, dynamic> json) => _$$TmplNameFromJson(json);
+
+  factory $TmplName.empty() => $TmplName(id: '');
+
+  Map<String, dynamic> toDocument() => ModelHelpers().toDocument(toJson());
+}

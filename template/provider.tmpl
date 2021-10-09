@@ -1,0 +1,22 @@
+import 'package:get/get.dart';
+
+import '../../models/$tmplName/$tmplName.dart';
+
+class $TmplNameProvider extends GetConnect {
+  @override
+  void onInit() {
+    httpClient.defaultDecoder = (map) {
+      if (map is Map<String, dynamic>) return $TmplName.fromJson(map);
+      if (map is List) return map.map((item) => $TmplName.fromJson(item)).toList();
+    };
+    httpClient.baseUrl = 'YOUR-API-URL';
+  }
+
+  Future<$TmplName?> get$TmplName(int id) async {
+    final response = await get('$tmplName/$id');
+    return response.body;
+  }
+
+  Future<Response<$TmplName>> post$TmplName($TmplName $tmplName) async => await post('$tmplName', $tmplName);
+  Future<Response> delete$TmplName(int id) async => await delete('$tmplName/$id');
+}
