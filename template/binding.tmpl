@@ -1,0 +1,11 @@
+import 'package:get/get.dart';
+
+import '../controllers/$tmpl_name_controller.dart';
+
+class $TmplNameBinding implements Bindings {
+  @override
+  void dependencies() {
+    Get.lazyPut<$TmplNameController>(() => $TmplNameController());
+    // Get.put<$TmplNameController>($TmplNameController());
+  }
+}

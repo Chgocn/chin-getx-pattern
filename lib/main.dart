@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
-
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 
-import 'app/data/services/dependency_injection.dart';
-import 'app/data/services/theme_service.dart';
-import 'app/data/services/translations_service.dart';
-import 'app/routes/app_pages.dart';
-import 'app/routes/app_routes.dart';
-import 'app/ui/layouts/main/main_layout.dart';
-import 'app/ui/theme/themes.dart';
+import 'data/services/dependency_injection.dart';
+import 'data/services/theme_service.dart';
+import 'data/services/translations_service.dart';
+import 'routes/app_pages.dart';
+import 'routes/app_routes.dart';
+import 'ui/layouts/main/main_layout.dart';
+import 'ui/theme/themes.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
